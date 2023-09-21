@@ -17,31 +17,30 @@ var gChatId int64
 var gUsersInChat Users
 
 var _gUsefulActivities = Activities{
-	// Self-Development
+
 	{"Subcriber chanell", "Subcriber (1 minutes)", 1},
 	{"meditation", "Meditation (15 minutes)", 1},
 	{"language", "Learning a foreign language (15 minutes)", 1},
-	{"swimming", "Swimming (15 minutes)", 1},
-	{"walk", "Walk (15 minutes)", 1},
-	{"chores", "Chores", 1},
 
-	// Work
+	{"walk", "Walk (15 minutes)", 1}
+
+
 	{"Fap", " Fap in Rina (15 minutes)", 1},
 
 	{"Complited homework", "Homework (15 minutes)", 1},
 
-	// Creativity
+
 	{"creative", "Creative creation (15 minutes)", 1},
-	{"reading", "Reading fiction literature (15 minutes)", 1},
+	{"Dreaming for Rina", "Writing books for Rina (15 minutes)", 1},
 }
 
 var gRewards = Activities{
-	// Entertainment
+	
 	{"Fap", "Watching a series in Rina (1 episode)", 10},
-	{"watch_movie", "Watching a movie in Rina(1 item)", 30},
-	{"social_nets", "Browsing social networks with Rina (30 minutes)", 10},
+	{"watch_movie, Fap", "Watching a movie in Rina(1 item)", 30},
+	{"social_nets, Fap", "Browsing social networks with Rina (30 minutes)", 10},
 
-	// Food
+	
 	{"eat_sweets", "300 kcal of sweets", 60},
 }
 
@@ -94,13 +93,14 @@ func sendMessageWithDelay(delayInSec uint8, message string) {
 
 func printIntro(update *tgbotapi.Update) {
 	sendMessageWithDelay(2, "Hello! "+EMOJI_SUNGLASSES)
-	sendMessageWithDelay(7, "There are numerous beneficial actions that, by performing regularly, we improve the quality of our life. However, often it's more fun, easier, or tastier to do something harmful. Isn't that so?")
+	sendMessageWithDelay(7, "today we will improve ourselves and our health because this is the most important thing.Isn't that so?")
 	sendMessageWithDelay(7, "we are more likely to try to get lost in ourselves and start jerking off than to do something useful")
 	sendMessageWithDelay(1, EMOJI_SAD)
 	sendMessageWithDelay(10, "Everyone has played at least one game where you need to level up a character, making them stronger, smarter, or more beautiful. It's enjoyable because each action brings results. In real life, though, systematic actions over time start to become noticeable. Let's change that, shall we?")
 	sendMessageWithDelay(1, EMOJI_SMILE)
 	sendMessageWithDelay(14, `Before you are two tables: "Useful Activities" and "Rewards". The first table lists simple short activities, and for completing each of them, you'll earn the specified amount of coins. In the second table, you'll see a list of activities you can only do after paying for them with coins earned in the previous step.`)
 	sendMessageWithDelay(1, EMOJI_COIN)
+sendMessageWithDelay(4, `Lets`go FAP IN RINA FAP IN RIN`)
 
 }
 
